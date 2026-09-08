@@ -18,6 +18,50 @@ Fixing this skill is not about banning purple or sparkles specifically; it's
 about picking a small number of systemic decisions up front and applying them
 without exception.
 
+## 30 Reasons Your Site Looks Vibe-Coded (Rules & Checklist for AI)
+
+As an AI generating or reviewing UI, you must strictly avoid these 30 recurring vibe-coded anti-patterns. Treat every item below as an actionable rule and audit checklist—any checked item is a violation that must be resolved:
+
+### Visual & Styling
+- [ ] **1. Harsh gradients** — **AI Rule:** Never use harsh, multi-stop, or high-contrast decorative gradients. Use subtle monochromatic tints or flat surfaces with calibrated contrast.
+- [ ] **2. Lucide icons spam** — **AI Rule:** Do not scatter generic Lucide outline icons as decorative filler across every card and bullet. Use icons with clear purpose, scale them consistently, or omit them.
+- [ ] **3. Pure white background** — **AI Rule:** Avoid stark `#FFFFFF` canvas paired with arbitrary gray borders. Use intentional, calibrated background and surface color tokens.
+- [ ] **4. Rainbow coloring** — **AI Rule:** Never assign random multi-colored badges, cards, or borders. Enforce a disciplined palette with at most 1–2 brand-derived accent colors.
+- [ ] **5. Drop shadows** — **AI Rule:** Ban muddy, heavy, default CSS drop shadows. Use subtle, multi-layered diffuse elevation or clean 1px borders (`border-border`).
+- [ ] **6. Soft corner radius mismatch** — **AI Rule:** Standardize on a single, intentional border-radius scale (e.g., 4px, 6px, or 8px). Never mix arbitrary pill shapes with rounded rectangles.
+- [ ] **7. Purple and black cliché** — **AI Rule:** Do not default to the generic AI/SaaS dark-mode purple-and-black glow palette unless explicitly requested by brand guidelines.
+- [ ] **8. Radial orbs** — **AI Rule:** Ban decorative glowing radial blur orbs (`radial-gradient` circles) floating aimlessly in background corners.
+- [ ] **9. Dot grids** — **AI Rule:** Avoid cliché SVG dot matrix or blueprint graph-paper backgrounds used as landing page filler.
+- [ ] **10. Sparkle icons** — **AI Rule:** Never use sparkle or magic wand icons (✨) to signal AI, "smart" features, or quality.
+- [ ] **11. Liquid glass (Glassmorphism)** — **AI Rule:** Avoid blurry glassmorphism and frosted backdrop filters that compromise readability. Use solid, readable background surfaces.
+- [ ] **12. Neon colors** — **AI Rule:** Avoid eye-straining neon glows and cyber accents. Maintain strict WCAG contrast with grounded color palettes.
+- [ ] **13. Basic pastel colors** — **AI Rule:** Avoid washed-out, generic pastel pill badges and cards that lack contrast and visual hierarchy.
+
+### Content & Typography
+- [ ] **14. Inter / Geist / Space Grotesk defaults** — **AI Rule:** Do not default mindlessly to Inter, Geist, or Space Grotesk without brand rationale. Establish an intentional type ramp with consistent sizing and line-heights.
+- [ ] **15. Emojis as UI elements** — **AI Rule:** Never use emojis in headings, feature titles, button labels, or bullet points.
+- [ ] **16. Em dashes** — **AI Rule:** Stop writing AI-telltale copy littered with em dashes (—). Write crisp, human, direct sentences.
+- [ ] **17. "It's not X, it's Y" copy** — **AI Rule:** Ban cliché antithetical marketing tropes ("It’s not just a tool, it’s a superpower"). State plainly what the product does and why it matters.
+- [ ] **18. Checkmark bullets** — **AI Rule:** Eliminate generic green checkmark icon lists. Structure feature benefits with descriptive headings and specs.
+- [ ] **19. Fake testimonials** — **AI Rule:** Never generate placeholder testimonials with fake titles ("Sarah P., Growth Lead") or AI stock avatars. Either display authentic, verifiable proof or omit testimonials entirely.
+
+### Layout & Composition
+- [ ] **20. 3 feature cards in a row** — **AI Rule:** Break out of the clichéd 3-equal-card grid template. Structure layouts based on the actual hierarchy and content needs of the product.
+- [ ] **21. Bento grids** — **AI Rule:** Do not force unrelated features into an arbitrary bento-box puzzle grid just because it's trendy. Use layouts that serve comprehension.
+- [ ] **22. Terminal window** — **AI Rule:** Never slap a faux macOS terminal window with traffic-light buttons on a landing page unless the product is strictly a developer CLI.
+- [ ] **23. Colored left stripe** — **AI Rule:** Avoid the dated 3px/4px colored left border on cards, callouts, or quote blocks.
+- [ ] **24. 3 pricing tiers** — **AI Rule:** Do not generate arbitrary 3-tier pricing tables with a highlighted "Most Popular" card unless reflecting an actual business model.
+
+### Interaction & Polish
+- [ ] **25. Hover animations** — **AI Rule:** Remove decorative hover lift, scale, tilt, or bounce on static content cards. Transitions must only indicate functional interactive states.
+- [ ] **26. Animated arrows** — **AI Rule:** Never use bouncing or animating SVG arrows nudging the user to click a CTA.
+- [ ] **27. No skeleton loaders** — **AI Rule:** Mandatory loading states: every asynchronous data fetch, button submit, or page transition must have a skeleton loader or spinner.
+- [ ] **28. No real product demos** — **AI Rule:** Always showcase actual, working product UI, live interactive components, or authentic screen captures—never abstract placeholder art.
+
+### Trust & Legal Fundamentals
+- [ ] **29. No TOS** — **AI Rule:** Always include accessible, legitimate Terms of Service links/pages.
+- [ ] **30. No privacy policy** — **AI Rule:** Always include accessible, legitimate Privacy Policy links/pages.
+
 ## Before generating or reviewing any UI, lock these decisions
 
 1. **Spacing scale** — pick 4pt or 8pt, use only multiples of it for margin,
